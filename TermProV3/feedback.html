@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+  <link rel="stylesheet" href="aos/aos.min.css">
+  <link rel="stylesheet" href="style.css"/>
 
+  </head>
+    <header>
+      <nav class="navbar">
+          <a href="#">
+            <img src="https://i.pinimg.com/originals/54/90/0d/54900d99c94a1db0b954931be9bd8428.jpg" class="brand"/>
+        </a>
+        <ul>
+          <li><a href="#">
+            Reserve Now
+          </a></li>
+          <li><a href="#">
+            About Us
+          </a></li>
+          <li><a href="#">
+            Feedback
+          </a></li>
+        </ul>
+        <ul>
+          <li><span class="menu-btn"> <a href="/">
+            Menu
+          </span></li>
+        </ul>
+        <span class="menu-btn-mobile">
+          Home
+        </span>
+      </nav>
+
+      <nav class="sidebar">
+        <div class="close-btn">
+          <span class="material-symbols-outlined">
+            close
+          </span>
+        </div>
+        <ul>
+          <li><a href="https://www.paypal.com" target="_blank">
+            Reserve Now
+          </a></li>
+          <li><a href="about.html">
+            About Us
+          </a></li>
+          <li><a href="feedback.html">
+            Feedback
+          </a></li>
+        </ul>
+      </nav>
+
+      <div class="sidebar-backdrop"></div>
+
+      <div class="header-body">
+        <h1 class="title">Feedback</h1>
+        
+  <form method="POST" action="/feedback-submit">
+    <label for="likes">What do you like about the car?</label>
+    <textarea name="likes" id="likes" rows="4" cols="50"></textarea>
+    <label for="suggestions">Any suggestions for improvement?</label>
+    <textarea name="suggestions" id="suggestions" rows="4" cols="50"></textarea>
+    <input type="submit" value="Submit Feedback">
+  </form>
