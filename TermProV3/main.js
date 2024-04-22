@@ -45,3 +45,27 @@ window.addEventListener('scroll', () => {
 });
 
 
+
+
+const menuBtnFeedback = document.querySelector('.menu-btn-feedback');
+const sidebarFeedback = document.querySelector('.sidebar-feedback');
+const closeBtnFeedback = document.querySelector('.close-btn-feedback');
+const backdropFeedback = document.querySelector('.sidebar-backdrop-feedback');
+const navbarMenuFeedback = document.querySelector('.navbar-menu-feedback');
+menuBtnFeedback.addEventListener('click', sidebarOpenFeedback);
+function sidebarOpenFeedback() {
+  sidebarFeedback.style.right = "0";
+  backdropFeedback.style.display = "block";
+  setTimeout(() => {
+    backdropFeedback.style.opacity = "1";
+  }, 50);
+  document.body.classList.add('sidebar-open-body');
+}
+closeBtnFeedback.addEventListener('click', () => {
+  sidebarFeedback.style.right = "-20em";
+  backdropFeedback.style.opacity = "0";
+  setTimeout(() => {
+    backdropFeedback.style.display = "none";
+  }, 300);
+  document.body.classList.remove('sidebar-open-body');
+});
